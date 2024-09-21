@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 0; 
+  }
+#offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: #1E232D;
+    padding: 5px;
+    font-size: small;
+ 
+}
+#closeof{
+    margin-left: 40px;
+    cursor: pointer;
+}
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #1E232D;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#sectionli{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;;
+}
+
+#sectionli a{
+    text-decoration: none;
+    color: #1E232D;
+    cursor: pointer;
+}
+#sectionli a:hover{
+    text-decoration: underline;
+    color: #1E232D;
+}
+.con{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.slider{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+
+    position: relative;
+    justify-content: center;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.slider-image-container{
+    display: flex;
+    transition: 2s;
+}
+
+.slider-image{
+    width: 100vw;
+}
+
+.slider-left-button{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 1;
+}
+
+.slider-left-button i{
+    font-size: 10vw;
+    
+}
+.slider-right-button{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+.slider-right-button i{
+    font-size: 10vw;
+}
+.slider-content{
+    position: absolute;
+    color: white;
+    text-align: center;
+     width: 100%;
+     top: 20%;
+}
+.slider-content h1{
+    font-size: 5vw;
+}
+.slider-content button{
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-top: 10px;
+   color: #1D232C;
+}
+
+    
+
+.brands{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.itemslo{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   text-align: center;
+   font-size: 2vw;
+}
+.branditem{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 4vw;
+    align-items: center;
+}
+.exp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews img{
+    width: 4vw;
+}
+.reviews{
+    margin-top: 20px;
+    padding: 5px;
+    width: 25%;
+    background-color: #F2F3F8;
+    border-radius: 10px;
+}
+.review{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+   
+    
+}
+
+.new-arrival-container{
+   position: relative;
+   
+    
+}
+
+.new-arrival-container img{
+    border-radius: 2%;
+    
+     
+ }
+ 
+
+.overlay{
+    border-radius: 2%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    top: 0;
+    opacity: 0.6;
+ }
+ 
+
+
+.new-arrival button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    color: #1D232C;
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    top: 50%;
+    left: 18%;
+    z-index: 2;
+    
+
+ }
+.wanted__item p{
+    background-color: red;
+    width: 30%;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    top: 3px;
+    font-size: 2vw;
+
+}
+.wanted__item{
+    position: relative;
+}
+.like{
+   
+    position: absolute;
+    bottom: 12%;
+    right: 5%;
+}
+.wanted__container{
+    margin-top: 10px;
+    display: flex;
+    overflow-x:scroll;
+    gap: 10px;
+    scroll-behavior: smooth;
+}
+.wanted__container::-webkit-scrollbar {
+    appearance: none;
+    
+  }
+  .limited-offer{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+    align-items: center;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    padding: 20px;
+    font-size: 2vw;
+}
+
+.limited-offer img{
+    width: 100%;
+    height: 100%100%;
+}
+
+.limited-offer-text{
+    padding: 5%;
+}
+
+.limited-offer button{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    color: #1D232C;
+    border-radius: 10px;
+ 
+    border: none;
+    
+    
+
+ }
+ .inpnews{
+    margin-top: 3px;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 80%;
+    border: solid #1D232C 3px;
+ }
+ .inpnews:focus{
+    outline: none;
+ }
+ .btnnews{
+    margin-top: 10px;
+    font-size: 1.8vw;
+    color: #E2E1E1;
+    background-color: #1D232C;
+    border-radius: 10px;
+    border: none;
+    padding:10px
+    
+ }
+ .icon{
+    width: 40px;
+    margin: 2vw;
+
+}
+.footer{
+    font-size: 2vw;
+    margin-top: 5vw;
+    padding: 40px;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    box-sizing: border-box;
+}
+
+.footer-container{
+   
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-box-1{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.footer-box-2{
+    display: flex;
+}
+
+.menubar{
+    display: none;
+    
+}
+.menubar i{
+    width: 50px;
+    cursor: pointer;
+}
+.sidenav{
+    background-color: #1D232C;
+    height: 100vh;
+    width: 50%;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+   padding: 20px;
+   left: -50%;
+  transition-duration: 2s;
+    
+}
+.sidenav a{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+
+}
+.sidenav a:hover{
+    text-decoration: underline;
+}
+.sidenav1{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#closenav{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    
+}
+#closenav h1{
+   color: white;
+}
+
+/* mediaqueries */
+@media screen and (max-width:1000px) {
+    body{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:800px) {
+    .menubar{
+        display: block;
+    }
+    #sectionli{
+        display: none;
+    }
+}
+.divide-section{
+    display: flex;
+}
+
+.filter-section{
+    flex-basis: 25%;
+    position: relative;
+    font-size: 2vw;
+}
+
+.product-section{
+    flex-basis: 75%;
+    position: relative;
+}
+
+.vertical-line {
+    border: none;
+    border-left: 3px solid #1D232C; /* Adjust color and width as needed */
+    height: 100%; /* Adjust height as needed */
+    margin: 0 20px; /* Adjust margin as needed */
+    position: absolute;
+    top: 0px;
+    right: 0px
+    
+  }
+
+.filter-section-price,.filter-section-arrivals,.filter-section-occasion,.filter-section-colors{
+    margin-top: 3vw;
+    margin-bottom: 10px;
+    
+}
+
+.product-section{
+    padding: 10px;
+}
+
+.products{
+    margin-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size:1vw;
+}
+.navbar-search input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.navbar-search i{
+    position: relative;
+    right: 5%;
+}
+.contact-form {
+    background-color: #1D232C;
+    color: #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60vw;
+    margin: auto;
+    padding: 5vw;
+    padding-right: 10vw;
+    margin-top: 10px;
+  }
+
+  .contact-form h2 {
+    margin-bottom: 1vw;
+   
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 1vw;
+ 
+  }
+
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 2vw;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+    height: 10vh;
+  }
+
+  .contact-form input[type="submit"] {
+    
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #0056b3;
+  }
+
+  .contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
