@@ -439,7 +439,7 @@ body::-webkit-scrollbar {
 }
 .navbar-search i{
     position: relative;
-    right: 5%;
+    right: 7%;
 }
 .contact-form {
     background-color: #1D232C;
@@ -494,3 +494,4 @@ body::-webkit-scrollbar {
   .contact-form input[type="submit"]:hover {
     background-color: #0056b3;
   }
+  

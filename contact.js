@@ -1,9 +1,15 @@
-var sideNavMenu=document.getElementById("side-navbar-activate")
-var sidenavbar = document.querySelector(".side-navbar")
-sideNavMenu.addEventListener("click",function(){
-    sidenavbar.style.marginLeft="0px"
+var x = document.getElementById("closeof")
+var offer = document.getElementById("offer")
+x.addEventListener("click",function(){
+    offer.style.display = "none"
 })
 
-document.getElementById("side-navbar-close").addEventListener("click",()=>{
-    document.querySelector(".side-navbar").style.marginLeft = "-60%"
+var menu = document.getElementById("menu")
+var sidenav = document.querySelector(".sidenav")
+var Close = document.getElementById("x")
+menu.addEventListener("click",function(){
+    sidenav.style.left="0px"
+})
+Close.addEventListener("click",function(){
+    sidenav.style.left="-50%"
 })
